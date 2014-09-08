@@ -1,16 +1,21 @@
 get '/add_question' do
-  p 2
-  @question_id = params[:question_id]
-  erb :_question, layout: false
+  if signed_in?
+    @question_id = params[:question_id]
+    erb :_question, layout: false
+  end
 end
 
 get '/add_choice' do
-  @choice_id = params[:choice_id]
-  erb :_choice, layout: false
+  if signed_in?
+    @choice_id = params[:choice_id]
+    erb :_choice, layout: false
+  end
 end
 
 get '/users/:id/create' do
+  if signed_in?
     erb :_create_survey, layout: false
+  end
 end
 
 post '/users/:id/create' do

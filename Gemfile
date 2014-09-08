@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.0.0'
 
 gem 'pg'
 
@@ -11,6 +11,7 @@ gem 'activerecord', '~>4.1'
 
 gem 'rake'
 
+gem 'bcrypt'
 gem 'shotgun'
 gem 'thin'
 gem 'shoulda-matchers'

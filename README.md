@@ -1,65 +1,12 @@
-Survey_Gorilla_challenge
+BROCCOLI
 ========================
 
-##TEAM:  FINGERS
-  Michael  
-  Michelle  
-  Gary  
-  Jesson  
-  Andrew  
+To access the dashboard, a user must first sign-up
 
-##PROJECT:  SURVEY BROCCOLI
+From there, you can either choose to complete an existing survey, or create a new survey
 
-###Our team’s custom take on Survey Gorilla…
+The app allows a user to create surveys which contain any variety of questions, and those questions contain multiple choice options
 
-To access the site, a user must first sign-up to create an account, and then log in.
+These surveys can then be taken by multiple users, with the option for the creator to view all survey results for those that they have created
 
-From there, they can either choose to complete a survey, or create a new survey.
-
-Our application allows a user to create surveys which contain any variety of questions, and those questions contain multiple choice options.  
-
-These surveys can then be taken by multiple users, with the option for the creator to view all survey results for those that they have created.
-
-On the back-end, we’ve used six different tables to store data for the application:
-
-####USERS
-ID  
-USERNAME  
-EMAIL  
-PASSWORD  
-TIMESTAMPS  
-
-####SURVEYS
-ID  
-NAME  
-CREATED_BY  
-TIMESTAMPS  
-
-####USER_SURVEYS (Join Table)
-ID  
-USER_ID (Creator)  
-SURVEY_ID  
-QUESTION    
-TIMESTAMPS  
-
-####CHOICES
-ID  
-CHOICE   
-TIMESTAMPS  
-
-####TAKENS
-USER_ID (Taker)  
-SURVEY_ID  
-TIMESTAMPS  
-
-####SURVEY_RESULTS
-CHOICE  
-SURVEY_ID  
-QUESTION_ID  
-TIMESTAMPS  
-
-We’re using AJAX throughout our one-page application to retrieve information and render views with limited need to refresh the page.  
-
-We’re using sessions to determine which information is appropriate to display to the user, as well as limit logged-in users’ ability to take a survey more than once.
-
-On the front-end, we’ve utilized SASS to work in conjunction with our CSS.  We’ve also used JavaScript event handlers to interact with the user.
+No broccoli were harmed in the making of this app
