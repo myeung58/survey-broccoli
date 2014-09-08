@@ -1,0 +1,54 @@
+<div class='nav-bar'>
+  <p><b>
+
+  <% if signed_in? %>
+    <a href='/' class='left-align'> &nbsp;<%=current_user.username %></a>
+
+    <a id="logout" href='/logout' class='right-align'> &nbsp; Log Out</a>
+
+  <% else %>
+
+     <a id="sign_up" href='/signup' class='right-align'> &nbsp; Sign Up </a>
+     <a id="sign_in" class='right-align' href="/signin"> Sign In </a>
+
+  <% end %>
+
+ </b></p>
+</div>
+
+<div class='broccoli'>
+  <h1>broccoli</h1>
+
+  <div class='left-nav'>
+  <% if signed_in? %>
+    <form id="create_form" action="/users/<%="#{current_user.id}"%>/create"  method="GET">
+    <input type="submit" id="create_survey" value="create survey">
+    </form>
+
+    <h4>My surveys</h4>
+
+    <% @my_surveys.each do |survey| %>
+      <a class="my-survey" href="/surveys/<%= survey.id %>/result"><%= survey.name %></a>
+    <% end %>
+    <br><br>
+  <% end %>
+
+    <h4  id='avail-surveys'>Take A Survey</h4>
+    <% @other_surveys.each do |survey| %>
+    <a class="other-survey" href="/surveys/<%= survey.id %>/take"><%= survey.name %></a><br>
+    <% end %>
+</div>
+</div>
+
+
+
+<div class="render_survey">
+
+</div>
+
+
+
+
+<!-- <div id='broc-div'>
+  <img src="/images/broc-bg.png" class='broc-img'>
+</div> -->

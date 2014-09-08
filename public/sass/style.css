@@ -1,0 +1,144 @@
+
+body {
+  /*background-color: #659525;*/
+background: url(http://images.fineartamerica.com/images-medium-large/broccoli-on-white-background-gaspar-avila.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+body {
+  background-color: #659525; }
+
+div.nav-bar {
+  background-color: #000000;
+  height: 7vw;
+  width: 100%;
+  position: relative; }
+  div.nav-bar p {
+    font-size: 4vw;
+    color: #659525;
+    margin-top: -5.25vw; }
+    div.nav-bar p span.left-align {
+      float: left;
+      color: #659525;
+      margin-top: 1.5vw; }
+    div.nav-bar p a.left-align {
+      float: left;
+      text-decoration: none;
+      color: #659525;
+      margin-top: 1.5vw; }
+    div.nav-bar p a.right-align {
+      float: right;
+      text-decoration: none;
+      color: #659525;
+      margin-top: 1.5vw; }
+
+div.broccoli {
+  border: 1px solid black;
+  float: left;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  padding-top: 1.5vw;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.9vw;
+  width: 15vw;
+  background-color: rgba(101, 149, 37,.8); }
+  div.broccoli h1 {
+    margin: 0;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #000000;
+    border-width: 1.5vw; }
+
+div.left-nav {
+  /*margin-top: 15vw;*/
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.25vw; }
+  div.left-nav a {
+    text-decoration: none;
+    font-size: .75em;
+    color: black;
+    padding-left: 10px;
+    transition: all 0.2s;
+  }
+
+  div.left-nav a:hover {
+    color: white;
+  }
+  div.left-nav h4 {
+    padding-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25vw; }
+  div.left-nav div.survey-content1 {
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #659525; }
+  div.left-nav div.survey-content2 {
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #659525; }
+
+div#broc-div {
+  height: 40vw;
+  width: 40vw;
+  background-color: #659525;
+  margin-left: 30vw;
+  margin-top: -15vw;
+  border-radius: 40vw; }
+
+img.broc-img {
+  opacity: 0.5;
+  border: solid black 2vw;
+  background-color: #659525;
+  height: 40vw;
+  width: 40vw;
+  border-radius: 40vw; }
+
+.delete {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  transition: all 0.2s; }
+
+.delete:hover {
+  color: red; }
+
+div.render_survey {
+  visibility: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: 175px;
+  color: white;
+  width: 500px;
+  background-color: rgba(101, 149, 37,.8);
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-shadow: 1px 1px 1px black;
+}
+
+a.submit{
+  font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+  position: relative;
+  top: 40px;
+  left: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.submit_div {
+  background-image: url("http://png-1.findicons.com/files/icons/1187/pickin_time/256/broccoli.png");
+  background-size: 100px 100px;
+  height: 100px;
+  width: 100px;
+}
+
+input {
+  color: green;
+}
+
+
+/*# sourceMappingURL=style.css.map */
